@@ -1,2 +1,2 @@
 # rekam-medis
-Sistem Klinik Rekam Medis
+Sistem Informasi Klinik Rekam Medis
