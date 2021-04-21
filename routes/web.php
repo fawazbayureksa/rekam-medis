@@ -28,3 +28,9 @@ Route::get('data-obat/edit/{id}', 'App\Http\Controllers\ObatController@EditObat'
 
 Route::patch('data-obat/{id}','App\Http\Controllers\ObatController@ProsesEdit');
 Route::get('data-obat/hapus/{id}','App\Http\Controllers\ObatController@ProsesHapus');
+Route::get('data-pasien','App\Http\Controllers\PasienController@DataPasien' );
+Route::get('data-pasien/tambah','App\Http\Controllers\PasienController@TambahPasien');
+Route::post('data-pasien','App\Http\Controllers\PasienController@ProsesTambah');
+Route::get('data-pasien/edit/{id}','App\Http\Controllers\PasienController@EditPasien');
+Route::patch('data-pasien/{id}','App\Http\Controllers\PasienController@ProsesEdit');
+Route::get('data-pasien/hapus/{id}','App\Http\Controllers\PasienController@ProsesHapus');

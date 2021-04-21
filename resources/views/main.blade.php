@@ -46,7 +46,7 @@
             <h6 class="collapse-header">Master Data</h6>
             <a class="collapse-item" href="{{url('data-obat')}}">Obat </a>
             <a class="collapse-item" href="">Tindakan</a>
-            <a class="collapse-item" href="">Pasien</a>
+            <a class="collapse-item" href="{{url('data-pasien')}}">Pasien</a>
             <a class="collapse-item" href="">Petugas</a>
           </div>
         </div>
