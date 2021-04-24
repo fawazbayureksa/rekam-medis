@@ -22,6 +22,10 @@ class CreateDataObatTable extends Migration
 
 
        Schema::rename('data-obat', 'obat');
+       
+       Schema::table('obat', function (Blueprint $table) {
+        $table->float('harga')->change();
+        });
            
     }
 

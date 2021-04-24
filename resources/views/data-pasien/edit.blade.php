@@ -43,9 +43,9 @@
                      <div class="form-group">
                       <label for="exampleFormControlSelect1">Jenis Kelamin</label>
                       <select class="form-control" id="exampleFormControlSelect1" name="gender">
-                        <option value="{{$pasien->jk_pasien}}">{{$pasien->jk_pasien}}</option>
-                        <option value="Pria">Pria</option>
-                        <option value="Wanita">Wanita</option>
+                        <option>-- Pilih --</option>
+                        <option value="Pria" {{$petugas->jk_pasien == 'Pria'? 'selected':''}}>Pria</option>
+                        <option value="Wanita" {{$petugas->jk_pasien == 'Wanita'? 'selected':''}}>Wanita</option>
                       </select>
                     </div>
                     <div class="form-group">

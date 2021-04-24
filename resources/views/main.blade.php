@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="img/logo/logo.png" rel="icon">
+  <link href="{{asset('style/img/logo/logo.png')}}
+" rel="icon">
   <title>@yield('title')</title>
   <link href="{{asset('style/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('style/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('style/css/ruang-admin.min.css')}}" rel="stylesheet">
   <link href="{{asset('style/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
- {{--  {{asset('style/')}} --}}
-</head>
+{{--   {{asset('style/')}}
+ --}}</head>
 <body id="page-top">
   <div id="wrapper">
     <!-- Sidebar -->
@@ -45,9 +46,9 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Master Data</h6>
             <a class="collapse-item" href="{{url('data-obat')}}">Obat </a>
-            <a class="collapse-item" href="">Tindakan</a>
+            <a class="collapse-item" href="{{url('data-tindakan')}}">Tindakan</a>
             <a class="collapse-item" href="{{url('data-pasien')}}">Pasien</a>
-            <a class="collapse-item" href="">Petugas</a>
+            <a class="collapse-item" href="{{url('data-petugas')}}">Petugas</a>
           </div>
         </div>
       </li>
