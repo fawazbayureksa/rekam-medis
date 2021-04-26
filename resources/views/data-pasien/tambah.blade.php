@@ -35,6 +35,11 @@
                         ">
                     </div>
                     <div class="form-group">
+                      <label for="">Nama Pasien</label>
+                      <input type="text" class="form-control" value="" name="nama" 
+                        placeholder="Masukkan Nama Pasien ...">
+                    </div>
+                    <div class="form-group">
                       <label for="">Alamat Pasien</label>
                       <textarea class="form-control" name="alm_pasien"></textarea>
                     </div>

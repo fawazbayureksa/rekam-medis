@@ -36,6 +36,11 @@
                         placeholder="Masukkan No Klinik
                         ">
                     </div>
+                      <div class="form-group">
+                      <label for="">Nama Pasien</label>
+                      <input type="text" class="form-control" value="{{$pasien->nm_pasien}}" name="nama" 
+                        placeholder="Masukkan Nama Pasien ...">
+                    </div>
                     <div class="form-group">
                       <label for="">Alamat Pasien</label>
                       <textarea class="form-control" name="alm_pasien">{{$pasien->alm_pasien}}</textarea>
@@ -44,8 +49,8 @@
                       <label for="exampleFormControlSelect1">Jenis Kelamin</label>
                       <select class="form-control" id="exampleFormControlSelect1" name="gender">
                         <option>-- Pilih --</option>
-                        <option value="Pria" {{$petugas->jk_pasien == 'Pria'? 'selected':''}}>Pria</option>
-                        <option value="Wanita" {{$petugas->jk_pasien == 'Wanita'? 'selected':''}}>Wanita</option>
+                        <option value="Pria" {{$pasien->jk_pasien == 'Pria'? 'selected':''}}>Pria</option>
+                        <option value="Wanita" {{$pasien->jk_pasien == 'Wanita'? 'selected':''}}>Wanita</option>
                       </select>
                     </div>
                     <div class="form-group">

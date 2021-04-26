@@ -32,6 +32,7 @@
                       <tr>
                         <th width="15px">No</th>
                         <th>No klinik</th>
+                        <th>Nama Pasien</th>
                         <th>Alamat Pasien</th>
                         <th>Jenis Kelamin</th>
                         <th>Tanggal Lahir</th>
@@ -47,6 +48,7 @@
                       <tr>
                        <td>{{$loop->iteration}}</td>
                         <td>{{$data->no_klinik}}</td>
+                        <td>{{$data->nm_pasien}}</td>
                         <td>{{$data->alm_pasien}}</td>
                         <td>{{$data->jk_pasien}}</td>
                         <td>{{$data->tgl_lahir_pasien}}</td>

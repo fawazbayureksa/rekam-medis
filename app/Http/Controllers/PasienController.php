@@ -17,6 +17,7 @@ class PasienController extends Controller
 	public function ProsesTambah(Request $request){
 		DB::table('pasien')->insert([
 			'no_klinik' => $request->noklinik,
+			'nm_pasien' => $request->nama,
 			'alm_pasien' => $request->alm_pasien,
 			'jk_pasien'=> $request->gender,
 			'tgl_lahir_pasien' => $request->tgl_lahir,
@@ -33,6 +34,7 @@ class PasienController extends Controller
 		DB::table('pasien')->where('id',$id)
 
 		->update(['no_klinik' =>$request->noklinik,
+			'nm_pasien' => $request->nama,
 			'alm_pasien' => $request->alm_pasien,
 			'jk_pasien'=> $request->gender,
 			'tgl_lahir_pasien' => $request->tgl_lahir,

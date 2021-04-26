@@ -66,3 +66,7 @@ Route::get('data-petugas/edit/{id}','App\Http\Controllers\PetugasController@Edit
 Route::patch('data-petugas/{id}','App\Http\Controllers\PetugasController@ProsesEdit');
 
 Route::get('data-petugas/hapus/{id}','App\Http\Controllers\PetugasController@ProsesHapus');
+
+Route::get('data-registrasi','App\Http\Controllers\RegistrasiController@DataPasien');
+
+Route::post('data-registrasi/simpan','App\Http\Controllers\RegistrasiController@TambahRegistrasi');
