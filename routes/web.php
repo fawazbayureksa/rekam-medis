@@ -70,3 +70,10 @@ Route::get('data-petugas/hapus/{id}','App\Http\Controllers\PetugasController@Pro
 Route::get('data-registrasi','App\Http\Controllers\RegistrasiController@DataPasien');
 
 Route::post('data-registrasi/simpan','App\Http\Controllers\RegistrasiController@TambahRegistrasi');
+
+Route::get('data-ceklab','App\Http\Controllers\CeklabController@DataCeklab');
+
+Route::post('data-ceklab/simpan','App\Http\Controllers\CeklabController@TambahCeklab');
+
+Route::get('data-pemeriksaan','App\Http\Controllers\PemeriksaanController@DataPemeriksaan');
+

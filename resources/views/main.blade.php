@@ -62,8 +62,8 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Transaksi</h6>
             <a class="collapse-item" href="{{url('data-registrasi')}}">Registrasi</a>
-            <a class="collapse-item" href="">Pemeriksaan</a>
-            <a class="collapse-item" href="">Cek Lab</a>
+            <a class="collapse-item" href="{{url('data-pemeriksaan')}}">Pemeriksaan</a>
+            <a class="collapse-item" href="{{url('data-ceklab')}}">Cek Lab</a>
             <a class="collapse-item" href="">Pembayaran</a>
           </div>
         </div>
