@@ -64,7 +64,7 @@
             <a class="collapse-item" href="{{url('data-registrasi')}}">Registrasi</a>
             <a class="collapse-item" href="{{url('data-pemeriksaan')}}">Pemeriksaan</a>
             <a class="collapse-item" href="{{url('data-ceklab')}}">Cek Lab</a>
-            <a class="collapse-item" href="">Pembayaran</a>
+            <a class="collapse-item" href="{{url('data-pembayaran')}}">Pembayaran</a>
           </div>
         </div>
       </li>

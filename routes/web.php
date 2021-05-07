@@ -25,6 +25,7 @@ Route::get('data-obat','App\Http\Controllers\ObatController@DataObat');
 Route::get('data-obat/tambah','App\Http\Controllers\ObatController@TambahObat');
 
 Route::post('data-obat', 'App\Http\Controllers\ObatController@ProsesTambah');
+
 Route::get('data-obat/edit/{id}', 'App\Http\Controllers\ObatController@EditObat');
 
 Route::patch('data-obat/{id}','App\Http\Controllers\ObatController@ProsesEdit');
@@ -77,3 +78,6 @@ Route::post('data-ceklab/simpan','App\Http\Controllers\CeklabController@TambahCe
 
 Route::get('data-pemeriksaan','App\Http\Controllers\PemeriksaanController@DataPemeriksaan');
 
+Route::post('data-pemeriksaan/simpan','App\Http\Controllers\PemeriksaanController@TambahPemeriksaan');
+
+Route::get('data-pembayaran','App\Http\Controllers\PembayaranController@DataPembayaran');

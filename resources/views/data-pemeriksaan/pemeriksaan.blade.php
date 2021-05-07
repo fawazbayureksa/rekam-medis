@@ -21,7 +21,7 @@
                   <h6 class="m-0 font-weight-bold text-primary">Data Cek Laboratorium</h6>
                 </div>
                 <div class="card-body">
-                	<form method="post" action="{{url('data-ceklab/simpan')}}">
+                	<form method="post" action="{{url('data-pemeriksaan/simpan')}}">
                 		@csrf
                 		<div class="row">
                 			<div class="col-md-6">
@@ -88,37 +88,38 @@
                   <table class="table align-items-center table-flush" id="dataTable">
                     <thead class="thead-light">
                       <tr>
-                        <th width="15px">No</th>
+                        <th width="15px">No Rawat</th>
                         <th>Nama Pasien</th>
-                        <th>Nama Petugas</th>
-                        <th>Jenis</th>
-                        <th>Hasil</th>
-                        <th>Ket</th>
-                        <th>Harga</th>
-                        <th>No Layanan</th>
-                        <th width="15%" class="text-center"><i class="fa fa-cog"></i></th>
-                      </tr>
-                    </thead>
+                        <th>Nama Dokter</th>
+                        <th>Daftar Obat</th>
+                        <th>Diagnosa</th>
+                        <th>Berat Badan</th>
+                        <th>Tensi</th>
+                        <th>Suhu Tubuh</th>
+                        <th>Keterangan</th>
+{{--                         <th width="15%" class="text-center"><i class="fa fa-cog"></i></th>
+ --}}                      </tr>
+                    </thea>
                     <tbody>
-                   {{--  
-                     @foreach ($ceklab as $dat)
+                    
+                     @foreach ($pemeriksaan as $dat)
                       
                       <tr>
-                       <td>{{$loop->iteration}}</td>
+                       {{-- <td>{{$loop->iteration}}</td> --}}
+                        <td>{{$dat->no_rawat}}</td>
                         <td>{{$dat->nm_pasien}}</td>
                         <td>{{$dat->nm_ptg}}</td>
-                        <td>{{$dat->nm_ceklab}}</td>
-                        <td>{{$dat->hasil_cek}}</td>
+                        <td>{{$dat->nm_obat}}</td>
+                        <td>{{$dat->diagnosa}}</td>
+                        <td>{{$dat->berat_badan}}</td>
+                        <td>{{$dat->tensi}}</td>
+                        <td>{{$dat->suhu_tubuh}}</td>
                         <td>{{$dat->ket}}</td>
-                        <td>{{$dat->harga}}</td>
-                        <td>{{$dat->no_layanan}}</td> --}}
-                       
-                      
                         <td class="text-center">
                           {{-- <a href="{{url('data-registrasi/hapus',$data->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> </a> --}}
                         </td>
                       </tr>
-                      {{-- @endforeach --}}
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
