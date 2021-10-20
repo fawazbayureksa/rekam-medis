@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
 class PasienSeeder extends Seeder
@@ -15,6 +15,7 @@ class PasienSeeder extends Seeder
     {
         DB::table('pasien')->insert([
         	['no_klinik'=>5,
+			'nm_pasien' => 'Nanna',
         	'alm_pasien'=>'Barombong',
         	'jk_pasien' => 'Wanita',
         	'tgl_lahir_pasien'=>'2000-06-04',
@@ -22,6 +23,7 @@ class PasienSeeder extends Seeder
         	'umur' => 20,
 	        ],
 	        ['no_klinik'=>6,
+			'nm_pasien' => 'fawaz',
         	'alm_pasien'=>'Bajeng',
         	'jk_pasien' => 'Pria',
         	'tgl_lahir_pasien'=>'2000-06-08',
